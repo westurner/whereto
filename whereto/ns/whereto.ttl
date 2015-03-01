@@ -1,93 +1,105 @@
 
-@prefix wt: <https://westurner.github.io/whereto/ns/whereto#> .
-@prefix schema: <http://schema.org/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix wt: <https://westurner.github.io/whereto/ns/whereto#> .
 
 schema:name
-  rdfs:label "Name"
+  rdfs:label "Name"@en ;
+  .
+
+wt:complexName
+  rdfs:label "Complex Name"@en ;
   .
 
 schema:address
-  rdfs:label "Address"
+  rdfs:label "Address"@en ;
   .
 
 schema:url
-  rdfs:label "URL"
+  rdfs:label "URL"@en ;
   .
 
 ## Rent
 wt:rent
-  rdfs:label "Rent" ;
+  rdfs:label "Rent"@en ;
   .
 wt:rentMin
-  rdfs:label "Rent Min" ;
+  rdfs:label "Rent Min"@en ;
   .
 wt:rentMax
-  rdfs:label "Rent Max" ;
+  rdfs:label "Rent Max"@en ;
   .
 
 # Utilities
 wt:water
-  rdfs:label "Water" ;
+  rdfs:label "Water"@en ;
   .
 wt:sewage
-  rdfs:label "Sewage" ;
+  rdfs:label "Sewage"@en ;
   .
 wt:gas
-  rdfs:label "Gas" ;
+  rdfs:label "Gas"@en ;
   .
 wt:electric
-  rdfs:label "Electric" ;
+  rdfs:label "Electric"@en ;
   .
-wt:electric
-  rdfs:label "Trash" ;
+wt:trash
+  rdfs:label "Trash"@en ;
   .
 wt:parking
-  rdfs:label "Parking" ;
+  rdfs:label "Parking"@en ;
   .
+wt:parkingNote
+  rdfs:label "Parking Notes"@en ;
+  .
+
+wt:hasGym
+  rdfs:label "Has a gym"@en ;
+  .
+  
 wt:gym
-  rdfs:label "Gym" ;
+  rdfs:label "Gym"@en ;
   .
 
 wt:walkingGrocery
-  rdfs:label "Grocery in Walking Distance" ;
+  rdfs:label "Grocery in Walking Distance"@en ;
   .
 wt:distanceToGrocery
-  rdfs:label "Distance to Grocery" ;
+  rdfs:label "Distance to Grocery"@en ;
   .
 
 wt:walkingRestaurants
-  rdfs:label "Restaurants in Walking Distance" ;
+  rdfs:label "Restaurants in Walking Distance"@en ;
   .
 
-wt:walkingTheatre
-  rdfs:label "Theatre in Walking Distance" ;
+wt:walkingCinema
+  rdfs:label "Cinema in Walking Distance"@en ;
   .
 
 wt:walkingUniversity
-  rdfs:label "University in Walking Distance" ;
+  rdfs:label "University in Walking Distance"@en ;
   .
 
 ## Laundry
 wt:laundryInUnit
-  rdfs:label "W/D in unit" ;
+  rdfs:label "W/D in unit"@en ;
   .
 
 wt:laundryOnsite
-  rdfs:label "W/D onsite" ;
+  rdfs:label "W/D onsite"@en ;
   .
 
 wt:freeLaundry
-  rdfs:label "W/D Free" ;
+  rdfs:label "W/D Free"@en ;
   .
 
 
 ## Pets
 wt:catsAllowed
-  rdfs:label "Cats Allowed" ;
+  rdfs:label "Cats Allowed"@en ;
   .
 
 wt:dogsAllowed
-  rdfs:label "Dogs Allowed" ;
+  rdfs:label "Dogs Allowed"@en ;
   .
 
