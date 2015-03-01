@@ -1,5 +1,5 @@
 
-@prefix td: <#> .
+@prefix wt: <https://westurner.github.io/whereto/ns/whereto#> .
 @prefix schema: <http://schema.org/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
@@ -16,78 +16,78 @@ schema:url
   .
 
 ## Rent
-td:rent
+wt:rent
   rdfs:label "Rent" ;
   .
-td:rentMin
+wt:rentMin
   rdfs:label "Rent Min" ;
   .
-td:rentMax
+wt:rentMax
   rdfs:label "Rent Max" ;
   .
 
 # Utilities
-td:water
+wt:water
   rdfs:label "Water" ;
   .
-td:sewage
+wt:sewage
   rdfs:label "Sewage" ;
   .
-td:gas
+wt:gas
   rdfs:label "Gas" ;
   .
-td:electric
+wt:electric
   rdfs:label "Electric" ;
   .
-td:electric
+wt:electric
   rdfs:label "Trash" ;
   .
-td:parking
+wt:parking
   rdfs:label "Parking" ;
   .
-td:gym
+wt:gym
   rdfs:label "Gym" ;
   .
 
-td:walkingGrocery
+wt:walkingGrocery
   rdfs:label "Grocery in Walking Distance" ;
   .
-td:distanceToGrocery
+wt:distanceToGrocery
   rdfs:label "Distance to Grocery" ;
   .
 
-td:walkingRestaurants
+wt:walkingRestaurants
   rdfs:label "Restaurants in Walking Distance" ;
   .
 
-td:walkingTheatre
+wt:walkingTheatre
   rdfs:label "Theatre in Walking Distance" ;
   .
 
-td:walkingUniversity
+wt:walkingUniversity
   rdfs:label "University in Walking Distance" ;
   .
 
 ## Laundry
-td:laundryInUnit
+wt:laundryInUnit
   rdfs:label "W/D in unit" ;
   .
 
-td:laundryOnsite
+wt:laundryOnsite
   rdfs:label "W/D onsite" ;
   .
 
-td:freeLaundry
+wt:freeLaundry
   rdfs:label "W/D Free" ;
   .
 
 
 ## Pets
-td:catsAllowed
+wt:catsAllowed
   rdfs:label "Cats Allowed" ;
   .
 
-td:dogsAllowed
+wt:dogsAllowed
   rdfs:label "Dogs Allowed" ;
   .
 
