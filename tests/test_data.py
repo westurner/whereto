@@ -11,7 +11,7 @@ def get_path(*path):
 
 
 class TestWhereToData(unittest.TestCase):
-    def test_read_data(self):
+    def test_read_whereto_schema(self):
         filepath = get_path('..', 'whereto', 'ns', 'whereto.ttl')
         output = data.read_data(filepath)
         self.assertTrue(output)
