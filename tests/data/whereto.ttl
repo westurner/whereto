@@ -1,0 +1,93 @@
+
+@prefix td: <#> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+schema:name
+  rdfs:label "Name"
+  .
+
+schema:address
+  rdfs:label "Address"
+  .
+
+schema:url
+  rdfs:label "URL"
+  .
+
+## Rent
+td:rent
+  rdfs:label "Rent" ;
+  .
+td:rentMin
+  rdfs:label "Rent Min" ;
+  .
+td:rentMax
+  rdfs:label "Rent Max" ;
+  .
+
+# Utilities
+td:water
+  rdfs:label "Water" ;
+  .
+td:sewage
+  rdfs:label "Sewage" ;
+  .
+td:gas
+  rdfs:label "Gas" ;
+  .
+td:electric
+  rdfs:label "Electric" ;
+  .
+td:electric
+  rdfs:label "Trash" ;
+  .
+td:parking
+  rdfs:label "Parking" ;
+  .
+td:gym
+  rdfs:label "Gym" ;
+  .
+
+td:walkingGrocery
+  rdfs:label "Grocery in Walking Distance" ;
+  .
+td:distanceToGrocery
+  rdfs:label "Distance to Grocery" ;
+  .
+
+td:walkingRestaurants
+  rdfs:label "Restaurants in Walking Distance" ;
+  .
+
+td:walkingTheatre
+  rdfs:label "Theatre in Walking Distance" ;
+  .
+
+td:walkingUniversity
+  rdfs:label "University in Walking Distance" ;
+  .
+
+## Laundry
+td:laundryInUnit
+  rdfs:label "W/D in unit" ;
+  .
+
+td:laundryOnsite
+  rdfs:label "W/D onsite" ;
+  .
+
+td:freeLaundry
+  rdfs:label "W/D Free" ;
+  .
+
+
+## Pets
+td:catsAllowed
+  rdfs:label "Cats Allowed" ;
+  .
+
+td:dogsAllowed
+  rdfs:label "Dogs Allowed" ;
+  .
+
