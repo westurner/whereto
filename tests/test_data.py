@@ -12,7 +12,7 @@ def get_path(*path):
 
 class TestWhereToData(unittest.TestCase):
     def test_read_data(self):
-        filepath = get_path('data', 'whereto.ttl')
+        filepath = get_path('..', 'whereto', 'ns', 'whereto.ttl')
         output = data.read_data(filepath)
         self.assertTrue(output)
         import rdflib
