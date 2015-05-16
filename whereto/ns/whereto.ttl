@@ -61,6 +61,10 @@ wt:gym
   rdfs:label "Gym"@en ;
   .
 
+wt:hasPool
+  rdfs:label "Has a pool"@en ;
+  .
+
 wt:walkingGrocery
   rdfs:label "Grocery in Walking Distance"@en ;
   .

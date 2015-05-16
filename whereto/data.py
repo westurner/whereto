@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 from __future__ import print_function, division
 
+import collections
+
 import rdflib
 
 
@@ -21,4 +23,10 @@ def read_data(path, format="turtle"):
     g = rdflib.Graph()
     g.parse(path, format=format)
     return g
+
+
+def build_context_from_schema_graph(g):
+    assert isinstance(g, rdflib.Graph)
+    c = collections.OrderedDict()
+
 
