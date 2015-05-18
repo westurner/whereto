@@ -65,6 +65,8 @@ Models
         .
 
 
+    ////
+
     ex:Message a schema:Thing ;
     //    schema:name
     //    schema:desc
@@ -85,9 +87,27 @@ Models
     //  ex:propertyState
         .
 
+    ex:Project a schema:Thing ;
+    // schema:name
+    // schema:desc
+    // tags:tag
+    // ex:projectState
+        .
+
+    ex:PropertyProject subclassof ex:Project
+    // schema:name
+    // schema:desc
+    // properties = { }
+        .
+
     ex:todoState a rdfs:Property ;
         rdfs:range tags:Tag ;
         //  rdfs:range tags:Tag { todo|ready|in progress|done }
+        .
+
+    ex:projectState a rdfs:Property ;
+        rdfs:range tags:Tag ;
+        // rdfs:range tags:Tag { open|closed }
         .
 
     ex:propertyState a rdfs:Property ;
@@ -96,6 +116,49 @@ Models
         .
 
 
+::
+
+    User
+    - name
+    - email
+    - profilePhoto
+    - bannerPhoto
+
+    Group
+    - name
+    - desc
+    - image
+    - profilePhoto
+    - bannerPhoto
+
+    Project
+    * primaryGroup
+    - name
+    - desc
+    - image
+    - profilePhoto
+    - bannerPhoto
+    * tags[]
+    * messages[]
+    * todos[]
+
+    PropertyProject(Project)
+    * property
+    * things[]
+
+    Property
+    - name
+    - desc
+    - image
+    - profilePhoto
+    - bannerPhoto
+    = maintenance history
+    = inventory
+      = food
+      = things
+    = utilities
+      = numbers, websites
+      = bills
 
 ::
 
@@ -117,7 +180,9 @@ Models
         schema:image
         ex:bannerImage
         ex:thumbnailImage
-        
+
+
+        project     /{groupid}/{projectid}[/]             -- /g2/zxy214 || /g2/project-two
         property    /{groupid}/{propertyid}[/]            -- /g2/zxy214 || /g2/studio-two
             a ex:Property
             ex:id
